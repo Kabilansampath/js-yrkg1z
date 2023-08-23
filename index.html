@@ -1,0 +1,31 @@
+<body>
+<div class="container">
+<h1>OTP VALIDATION</h1>
+    <form>
+        <input type="text" id="1" class="a" maxlength="1" pattern="[0-9]{1}" autofocus onkeyup="valid(this)">
+        <input type="text" id="2" class="a" maxlength="1" pattern="[0-9]{1}" onkeyup="valid(this)" >
+        <input type="text" id="3" class="a" maxlength="1" pattern="[0-9]{1}" onkeyup="valid(this)" >
+        <input type="text" id="4" class="a" maxlength="1" pattern="[0-9]{1}" onkeyup="valid(this)">
+        <br><br>
+        <input id="5" onclick="submited()" class="b" type="submit">
+    </form>
+</div>
+</body>
+<script>
+  function valid(inputElement)
+{
+var currentValue = inputElement.value;
+if (currentValue.length == 1)
+{
+var currentID = parseInt(inputElement.id);
+var nextID = currentID + 1;
+var nextInput = document.getElementById(nextID);
+nextInput.focus();
+}
+}
+function submited() 
+{
+confirm("If valid Credentials enters press OK or CANCEL");       
+}
+
+</script>

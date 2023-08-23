@@ -1,0 +1,35 @@
+.a {
+  width: 25px;
+  height: 35px;
+  border-radius: 7px;
+  text-align: center;
+  background: grey;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.b {
+  background: green;
+  border: none;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+}
+.container {
+  text-align: center;
+  margin-left: 500px;
+  margin-top: 200px;
+  width: 300px;
+  height: 200px;
+  background: blue;
+  border-radius: 25px;
+}
+body {
+  background: grey;
+}
+h1 {
+  color: white;
+}
